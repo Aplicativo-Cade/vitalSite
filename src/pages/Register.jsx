@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { base44 } from "@/api/base44Client";
+import { continueMfa, loginWithGoogle } from "@/lib/authMfa";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -19,6 +20,7 @@ export default function Register() {
   const [loading, setLoading] = useState(false);
   const [showOtp, setShowOtp] = useState(false);
   const [otpCode, setOtpCode] = useState("");
+  const loginPath = "/login" + (safeReturnTo() !== "/" ? "?returnTo=" + encodeURIComponent(safeReturnTo()) : "");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,6 +45,11 @@ export default function Register() {
     setLoading(true);
     try {
       const result = await base44.auth.verifyOtp({ email, otpCode });
+      if (result?.mfa_required) {
+        // The account is already verified, so a retry here would fail; sign in again instead.
+        await continueMfa(result, safeReturnTo()).catch(() => window.location.assign(loginPath));
+        return;
+      }
       if (result?.access_token) {
         base44.auth.setToken(result.access_token);
       }
@@ -67,8 +74,9 @@ export default function Register() {
     }
   };
 
-  const handleGoogle = () => {
-    base44.auth.loginWithProvider("google", safeReturnTo());
+  const handleGoogle = async () => {
+    try { await loginWithGoogle(safeReturnTo()); }
+    catch (err) { setError(err.message || 'Unable to sign in with Google'); }
   };
 
   if (showOtp) {
@@ -134,7 +142,7 @@ export default function Register() {
         <>
           Already have an account?{" "}
           <Link
-            to={"/login" + (safeReturnTo() !== "/" ? "?returnTo=" + encodeURIComponent(safeReturnTo()) : "")}
+            to={loginPath}
             className="text-primary font-medium hover:underline"
           >
             Log in

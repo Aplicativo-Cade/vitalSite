@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { loginWithMfa, continueMfa, loginWithGoogle } from "@/lib/authMfa";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -23,7 +23,11 @@ export default function Login() {
     setError("");
     setLoading(true);
     try {
-      await base44.auth.loginViaEmailPassword(email, password);
+      const result = await loginWithMfa(email, password);
+      if (result.mfa_required) {
+        await continueMfa(result, returnTo);
+        return;
+      }
       window.location.href = returnTo;
     } catch (err) {
       setError(err.message || "Invalid email or password");
@@ -32,8 +36,9 @@ export default function Login() {
     }
   };
 
-  const handleGoogle = () => {
-    base44.auth.loginWithProvider("google", returnTo);
+  const handleGoogle = async () => {
+    try { await loginWithGoogle(returnTo); }
+    catch (err) { setError(err.message || 'Unable to sign in with Google'); }
   };
 
   return (
