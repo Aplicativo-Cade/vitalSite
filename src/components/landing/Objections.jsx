@@ -1,4 +1,4 @@
-import { OBJECTIONS } from "@/data/geriactiva";
+import { OBJECTIONS } from "@/data/vital";
 
 export default function Objections() {
   return (

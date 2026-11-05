@@ -1,5 +1,5 @@
 import { Image } from "@/components/ui/image";
-import { USAGE_PHOTOS } from "@/data/geriactiva";
+import { USAGE_PHOTOS } from "@/data/vital";
 
 const STATS = [
   { n: "500+", l: "Clientes" },

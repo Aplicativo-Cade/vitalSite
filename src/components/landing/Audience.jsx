@@ -1,4 +1,4 @@
-import { AUDIENCE } from "@/data/geriactiva";
+import { AUDIENCE } from "@/data/vital";
 
 export default function Audience() {
   return (

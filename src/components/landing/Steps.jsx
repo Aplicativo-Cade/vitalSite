@@ -1,4 +1,4 @@
-import { STEPS } from "@/data/geriactiva";
+import { STEPS } from "@/data/vital";
 
 export default function Steps() {
   return (

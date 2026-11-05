@@ -1,16 +1,15 @@
-import { Image } from "@/components/ui/image";
-import { MOCKUP, NUMBERS } from "@/data/geriactiva";
+import { MOCKUP, NUMBERS } from "@/data/vital";
 
 export default function WhyNumbers() {
   return (
     <section className="alt">
       <div className="wrap">
-        <h2 className="sec-title">¿Por qué elegir GeriActiva?</h2>
-        <p className="sec-sub">La colección más completa del mercado, en una sola biblioteca.</p>
+        <h2 className="sec-title">¿Por qué elegir Vital?</h2>
+        <p className="sec-sub">La colección más completa del mercado, ahora en formato digital interactivo.</p>
 
         <div className="big-num">
-          <b>+1.395</b>
-          páginas ilustradas · un ejercicio por página · organizadas por nivel y objetivo
+          <b>+1.997</b>
+          Fichas Ilustradas: Un ejercicio por página, paso a paso, con y sin equipamiento.
         </div>
 
         <div className="inc">
@@ -23,11 +22,10 @@ export default function WhyNumbers() {
           ))}
         </div>
 
-        <Image
+        <img
           className="tomos-img"
           src={MOCKUP}
-          alt="Colección de 5 tomos GeriActiva"
-          fittingType="fit"
+          alt="Colección de 5 tomos Vital"
           loading="lazy"
         />
       </div>

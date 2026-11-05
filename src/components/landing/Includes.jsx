@@ -1,4 +1,4 @@
-import { INCLUDES } from "@/data/geriactiva";
+import { INCLUDES } from "@/data/vital";
 
 export default function Includes() {
   return (

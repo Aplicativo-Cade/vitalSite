@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Image } from "@/components/ui/image";
-import { GALLERY } from "@/data/geriactiva";
+import { GALLERY } from "@/data/vital";
 import GalleryLightbox from "./GalleryLightbox";
 
 const TOTAL = GALLERY.length;

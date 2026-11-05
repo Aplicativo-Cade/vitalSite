@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
     <footer>
-      <b>GeriActiva</b> · +1.395 páginas de Actividades para Adultos Mayores
+      <b>Vital WebApp</b> · +1.997 Fichas Ilustradas y Herramientas Inteligentes
       <br />
-      Material profesional para fisioterapeutas, educadores físicos y cuidadores.
+      Plataforma y material profesional para fisioterapeutas, educadores físicos y cuidadores.
       <br />
       <span className="legal">
-        Este material es de apoyo y no reemplaza el criterio de un profesional de la salud.
-        <br />© 2026 GeriActiva. Todos los derechos reservados.
+        Este material es de apoyo y no reemplaza el criterio médico ni el juicio clínico de un profesional de la salud.
+        <br />© 2026 Vital. Todos los derechos reservados.
       </span>
     </footer>
   );

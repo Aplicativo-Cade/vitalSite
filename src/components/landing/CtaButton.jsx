@@ -1,4 +1,4 @@
-import { CHECKOUT_URL } from "@/data/geriactiva";
+import { CHECKOUT_URL } from "@/data/vital";
 
 export default function CtaButton({ children, sub, className = "" }) {
   return (

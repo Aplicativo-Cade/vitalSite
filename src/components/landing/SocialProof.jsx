@@ -1,5 +1,5 @@
 import { Image } from "@/components/ui/image";
-import { TESTIMONIALS } from "@/data/geriactiva";
+import { TESTIMONIALS } from "@/data/vital";
 
 export default function SocialProof() {
   return (
@@ -8,7 +8,7 @@ export default function SocialProof() {
         <p className="center">
           <span className="pill">PROFESIONALES QUE YA LO USAN</span>
         </p>
-        <h2 className="sec-title">Fisioterapeutas de LATAM ya trabajan con GeriActiva</h2>
+        <h2 className="sec-title">Fisioterapeutas de LATAM ya trabajan con Vital</h2>
         <p className="sec-sub">Historias reales de quienes dejaron de improvisar.</p>
 
         <div className="rtesti">

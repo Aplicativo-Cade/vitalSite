@@ -3,25 +3,36 @@ import OfferCountdown from "./OfferCountdown";
 
 const STACK = [
   <>
-    <b>5 Tomos</b> · +1.395 páginas ilustradas
+    <b>+1.997 Fichas Ilustradas</b> · Un ejercicio por página, paso a paso
   </>,
   <>
-    <b>Tomo 5</b> con 91 láminas imprimibles (sopas, laberintos y secuencias)
+    <b>5 Tomos completos + Herramientas</b> · Físico, movilidad, estiramientos, cognitivo, dinámicas y webapp
   </>,
   <>
-    <b>4 Bonos</b>: Movilidad Reducida, Recuperación, Guía de Evaluación y Armador de Sesiones
+    <b>Buscador Inteligente y Filtros</b> · Encontrá ejercicios por condición (silla de ruedas, post-caída, marcha)
   </>,
   <>
-    Acceso inmediato y <b>para siempre</b> + actualizaciones
+    <b>Generador de Sesión Express</b> · Seleccioná el tiempo y foco; el webapp arma tu rutina automáticamente
+  </>,
+  <>
+    <b>Sistema de Colecciones</b> · Guardá y agrupá tus rutinas favoritas estilo carpetas para cada paciente
+  </>,
+  <>
+    <b>4 Bonos exclusivos + +170 Adaptados</b> · Movilidad reducida, recuperación, evaluación y sesiones
+  </>,
+  <>
+    Acceso inmediato y <b>vitalicio</b> + actualizaciones
   </>,
 ];
 
 const PLAN_FEATURES = [
-  "Los 5 tomos (+1.395 páginas)",
-  "91 láminas cognitivas imprimibles",
-  "Los 4 bonos exclusivos",
-  "Acceso inmediato y para siempre",
-  "Garantía de 7 días",
+  "Acceso completo al WebApp interactivo",
+  "+1.997 fichas ilustradas paso a paso",
+  "Buscador inteligente y filtros avanzados",
+  "Generador de Sesión Express automático",
+  "Sistema de colecciones y carpetas",
+  "Los 4 bonos exclusivos y +170 adaptados",
+  "Garantía incondicional de 7 días",
 ];
 
 export default function Offer() {
@@ -31,7 +42,7 @@ export default function Offer() {
         <OfferCountdown />
 
         <div className="vstack">
-          <h3>Todo lo que te llevás hoy</h3>
+          <h3>Todo lo que te llevás hoy con acceso vitalicio.</h3>
           <ul>
             {STACK.map((item, i) => (
               <li key={i}>
@@ -43,29 +54,29 @@ export default function Offer() {
             ))}
           </ul>
           <p className="anchor">
-            Armar este material vos mismo: <b>semanas de trabajo.</b> Mandarlo a diseñar:{" "}
+            Desarrollar este software y digitalizar todo el material: <b>meses de trabajo.</b> Contratar programadores y diseñadores:{" "}
             <b>cientos de dólares.</b>
             <br />
-            Valor real: <s>US$ 84.95</s>
+            Valor real: <s>US$ 325.78</s>
           </p>
           <p className="ridic">Hoy lo llevás por menos de lo que cobrás por UNA sesión. 🤯</p>
         </div>
 
         <div className="plan best" style={{ maxWidth: 520, margin: "0 auto" }}>
-          <h3>Colección Completa GeriActiva</h3>
+          <h3>Colección Completa GeriActiva WebApp</h3>
           <p className="old">
-            Antes: <s>US$ 84.95</s>
+            Antes: <s>US$ 325.78</s>
           </p>
           <div className="now">US$ 17</div>
-          <p className="save">Ahorrás US$ 67.95</p>
+          <p className="save">Ahorrás US$ 308.78</p>
           <ul className="feats">
             {PLAN_FEATURES.map((feature) => (
               <li key={feature}>{feature}</li>
             ))}
           </ul>
-          <CtaButton>QUIERO MI KIT AHORA</CtaButton>
+          <CtaButton sub="Acceso inmediato · Pago único">QUIERO MI ACCESO AL WEBAPP AHORA</CtaButton>
           <p className="after">
-            Con que uses <b>una sola ficha con un solo paciente</b>, ya lo recuperaste.
+            Con que uses <b>una sola ficha o generes una sesión express</b>, ya lo recuperaste.
           </p>
         </div>
 
@@ -74,7 +85,7 @@ export default function Offer() {
             🛡️
           </span>
           <span>
-            <b>Garantía de 7 días.</b> Si no te sirve, te devolvemos el 100% de tu dinero. Sin preguntas.
+            <b>Garantía de 7 días.</b> Si el webapp no supera tus expectativas, te devolvemos el 100% de tu dinero. Sin preguntas.
           </span>
         </div>
       </div>

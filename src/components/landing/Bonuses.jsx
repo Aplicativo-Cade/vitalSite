@@ -1,5 +1,5 @@
 import { Image } from "@/components/ui/image";
-import { BONUSES } from "@/data/geriactiva";
+import { BONUSES } from "@/data/vital";
 
 export default function Bonuses() {
   return (
@@ -9,7 +9,7 @@ export default function Bonuses() {
           <span className="pill">BONOS EXCLUSIVOS</span>
         </p>
         <h2 className="sec-title" style={{ color: "#fff" }}>
-          También te llevás esto <span className="amber">gratis</span>
+          Todo lo que te llevás hoy con <span className="amber">acceso vitalicio.</span>
         </h2>
         <p className="sec-sub" style={{ color: "rgba(255,255,255,.75)" }}>
           4 bonos para aplicar con seguridad en cualquier condición.
