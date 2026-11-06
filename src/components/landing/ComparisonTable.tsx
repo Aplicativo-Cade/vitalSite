@@ -10,7 +10,7 @@ type Props = {
   rightTitle: string;
   rows: CompareRow[];
   /** Imagem opcional ao lado da tabela (só aparece em telas largas) */
-  image?: { src: string; alt: string };
+  image?: string;
   /** Legenda acessível da tabela */
   caption?: string;
 };
@@ -50,7 +50,7 @@ export default function ComparisonTable({ leftTitle, rightTitle, rows, image, ca
 
       {image && (
         <div className="cmp-img">
-          <img src={image.src} alt={image.alt} loading="lazy" />
+          <img src={image} alt="Comparative image" loading="lazy" />
         </div>
       )}
     </div>

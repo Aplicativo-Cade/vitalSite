@@ -6,19 +6,19 @@ const STACK = [
     <b>+1.997 Fichas Ilustradas</b> · Un ejercicio por página, paso a paso
   </>,
   <>
-    <b>5 Tomos completos + Herramientas</b> · Físico, movilidad, estiramientos, cognitivo, dinámicas y webapp
+    <b>5 Tomos completos + Herramientas</b> · Físico, movilidad, estiramientos, cognitivo, dinámicas y MiniApp
   </>,
   <>
     <b>Buscador Inteligente y Filtros</b> · Encontrá ejercicios por condición (silla de ruedas, post-caída, marcha)
   </>,
   <>
-    <b>Generador de Sesión Express</b> · Seleccioná el tiempo y foco; el webapp arma tu rutina automáticamente
+    <b>Generador de Sesión Express</b> · Seleccioná el tiempo y foco; el MiniApp arma tu rutina automáticamente
   </>,
   <>
     <b>Sistema de Colecciones</b> · Guardá y agrupá tus rutinas favoritas estilo carpetas para cada paciente
   </>,
   <>
-    <b>4 Bonos exclusivos + +170 Adaptados</b> · Movilidad reducida, recuperación, evaluación y sesiones
+    <b>3 Bonos exclusivos + +170 Adaptados</b> · Movilidad reducida, recuperación, evaluación y sesiones
   </>,
   <>
     Acceso inmediato y <b>vitalicio</b> + actualizaciones
@@ -26,12 +26,12 @@ const STACK = [
 ];
 
 const PLAN_FEATURES = [
-  "Acceso completo al WebApp interactivo",
+  "Acceso completo al MiniApp interactivo",
   "+1.997 fichas ilustradas paso a paso",
   "Buscador inteligente y filtros avanzados",
   "Generador de Sesión Express automático",
   "Sistema de colecciones y carpetas",
-  "Los 4 bonos exclusivos y +170 adaptados",
+  "Los 3 bonos exclusivos y +170 adaptados",
   "Garantía incondicional de 7 días",
 ];
 
@@ -63,7 +63,7 @@ export default function Offer() {
         </div>
 
         <div className="plan best" style={{ maxWidth: 520, margin: "0 auto" }}>
-          <h3>Colección Completa GeriActiva WebApp</h3>
+          <h3>Colección Completa GeriActiva MiniApp</h3>
           <p className="old">
             Antes: <s>US$ 325.78</s>
           </p>
@@ -74,7 +74,7 @@ export default function Offer() {
               <li key={feature}>{feature}</li>
             ))}
           </ul>
-          <CtaButton sub="Acceso inmediato · Pago único">QUIERO MI ACCESO AL WEBAPP AHORA</CtaButton>
+          <CtaButton sub="Acceso inmediato · Pago único">QUIERO MI ACCESO AL MINIAPP AHORA</CtaButton>
           <p className="after">
             Con que uses <b>una sola ficha o generes una sesión express</b>, ya lo recuperaste.
           </p>
@@ -85,7 +85,7 @@ export default function Offer() {
             🛡️
           </span>
           <span>
-            <b>Garantía de 7 días.</b> Si el webapp no supera tus expectativas, te devolvemos el 100% de tu dinero. Sin preguntas.
+            <b>Garantía de 7 días.</b> Si el MiniApp no supera tus expectativas, te devolvemos el 100% de tu dinero. Sin preguntas.
           </span>
         </div>
       </div>

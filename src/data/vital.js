@@ -8,7 +8,7 @@ export const MOCKUP = `${B}1787977659934_mockup-final.webp`;
 
 export const TESTIMONIALS = [
   {
-    photo: `${B}1787958917467_foto-daniela.webp`,
+    photo: `https://res.cloudinary.com/xiupvhfs/video/upload/v1793986372/download_1.mp4`,
     alt: "Ana López García, fisioterapeuta de Argentina, en la app Vital",
     quote:
       "Dejé de improvisar. Tener miles de ejercicios ilustrados y buscarlos en segundos ordenó mi trabajo por completo: mis pacientes están más motivados.",
@@ -16,17 +16,17 @@ export const TESTIMONIALS = [
     role: "Fisioterapeuta · Argentina",
   },
   {
-    photo: `${B}1787958919264_foto-patricia.webp`,
-    alt: "Patricia Muñoz, kinesióloga de Colombia, con la app Vital",
+    photo: `https://res.cloudinary.com/xiupvhfs/video/upload/v1793987133/853c22920e9a037e16091f181a7495cc.mp4`,
+    alt: "Bento Muñoz, kinesióloga de Colombia, con la app Vital",
     quote:
       "Antes armaba cada sesión desde cero y se me iban las tardes. Con Vital abro, elijo la ficha y la aplico. Mis pacientes notaron el cambio… y yo recuperé mi tiempo.",
-    who: "Patricia Muñoz",
-    role: "Kinesióloga · Colombia",
+    who: "Bento Muñoz",
+    role: "Terapeuta ocupacional · Colombia",
   },
 ];
 
 export const STEPS = [
-  { n: "1", title: "Abre", text: "Entrás al webapp organizado por categoría, nivel o condición del paciente. Encontrás lo que buscás en segundos." },
+  { n: "1", title: "Abre", text: "Entrás al MiniApp organizado por categoría, nivel o condición del paciente. Encontrás lo que buscás en segundos." },
   { n: "2", title: "Elige", text: "Usás el generador express o seleccionás tus ejercicios favoritos guardándolos en colecciones personalizadas." },
   { n: "3", title: "Aplica", text: "Imprimís la ficha profesional o la mostrás en pantalla. Cada sesión lista en minutos, no en horas." },
 ];
@@ -34,13 +34,13 @@ export const STEPS = [
 export const NUMBERS = [
   { n: "5", t: "Tomos completos + Herramientas", d: "Físico, movilidad, estiramientos, cognitivo, dinámicas y herramientas inteligentes" },
   { n: "Filtros", t: "Buscador Inteligente", d: "Encontrá ejercicios por condición (silla de ruedas, post-caída, marcha)." },
-  { n: "Sesión Express", t: "Generador de Sesiones", d: "Seleccioná el tiempo y foco; el webapp arma tu rutina automáticamente." },
+  { n: "Sesión Express", t: "Generador de Sesiones", d: "Seleccioná el tiempo y foco; el MiniApp arma tu rutina automáticamente." },
   { n: "Colecciones", t: "Sistema de Colecciones", d: "Guardá y agrupá tus rutinas favoritas estilo carpetas para cada paciente o grupo." },
-  { n: "4", t: "Bonos exclusivos", d: "Movilidad reducida, recuperación, evaluación y sesiones." },
+  { n: "3", t: "Bonos exclusivos", d: "Movilidad reducida, recuperación, evaluación y sesiones." },
   { n: "+170", t: "Adaptados", d: "Movilidad reducida y recuperación post-caída." },
 ];
 
-export const WEBAPP_SCREENS = [
+export const MINIAPP_SCREENS = [
   {
     id: "dashboard",
     badge: "Página Principal",
@@ -178,13 +178,6 @@ export const BONUSES = [
     text: "Escalas y pruebas para medir el estado inicial y demostrar avances ante familias y pacientes.",
     value: "Vale $17",
   },
-  {
-    img: `${B}1787663351106_bono4.webp`,
-    alt: "Bono 4 armador de sesiones",
-    title: "Armador de Sesiones",
-    text: "Plantillas para diseñar sesiones y planes completos en minutos. El puente entre tener los ejercicios y tener la sesión lista.",
-    value: "Vale $17",
-  },
 ];
 
 export const USAGE_PHOTOS = [
@@ -197,7 +190,7 @@ export const USAGE_PHOTOS = [
 
 export const FAQ = [
   {
-    q: "¿Cómo recibo el acceso al webapp?",
+    q: "¿Cómo recibo el acceso al MiniApp?",
     a: "Al instante. Apenas completás tu pago, recibís tus credenciales por correo electrónico para ingresar de inmediato desde cualquier celular, tablet o computadora.",
   },
   {
@@ -210,14 +203,14 @@ export const FAQ = [
   },
   {
     q: "¿Cómo funciona el generador de sesión express y las colecciones?",
-    a: "Elegís el tiempo, la condición o el foco del paciente, y el webapp arma tu rutina automáticamente. Además, podés guardar y agrupar tus ejercicios favoritos en carpetas personalizadas estilo colecciones.",
+    a: "Elegís el tiempo, la condición o el foco del paciente, y el MiniApp arma tu rutina automáticamente. Además, podés guardar y agrupar tus ejercicios favoritos en carpetas personalizadas estilo colecciones.",
   },
   {
     q: "¿En qué dispositivos puedo usarlo y se puede imprimir?",
     a: "Podés usarlo en cualquier dispositivo con navegador web. Cada ficha cuenta con un botón dedicado para exportar en PDF e imprimir en formato A4 de forma limpia y profesional.",
   },
   {
-    q: "¿Y si el webapp no cumple mis expectativas?",
+    q: "¿Y si el MiniApp no cumple mis expectativas?",
     a: "Tenés 7 días de garantía incondicional. Si no te sirve o no se adapta a tu trabajo, te devolvemos el 100% de tu dinero sin preguntas.",
   },
 ];

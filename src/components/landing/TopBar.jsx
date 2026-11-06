@@ -12,12 +12,6 @@ export default function TopBar() {
         <br />
         <span>{today}</span>
       </div>
-      <button
-        type="button"
-        onClick={() => window.open(CHECKOUT_URL, "_blank", "noopener,noreferrer")}
-      >
-        Quiero el kit
-      </button>
     </div>
   );
 }

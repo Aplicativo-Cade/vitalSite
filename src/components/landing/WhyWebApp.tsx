@@ -32,17 +32,17 @@ export default function WhyWebApp() {
   return (
     <section>
       <div className="wrap wide">
-        <h2 className="sec-title">¿Por qué elegir nuestro WebApp en lugar de libros estáticos?</h2>
+        <h2 className="sec-title">¿Por qué elegir nuestro MiniApp en lugar de libros estáticos?</h2>
         <p className="sec-sub">
           Lo mejor de un libro, con el poder de un software moderno.
         </p>
 
         <ComparisonTable
           leftTitle="Libros en PDF"
-          rightTitle="Vital WebApp"
-          caption="Comparativo entre libros en PDF y Vital WebApp"
+          rightTitle="Vital MiniApp"
+          caption="Comparativo entre libros en PDF y Vital MiniApp"
           rows={ROWS}
-          image={{ src: MOCKUP, alt: "Colección Vital en el WebApp" }}
+          image='https://res.cloudinary.com/xiupvhfs/image/upload/v1793980033/watermarked_img_4218221343422060236.jpg'
         />
       </div>
     </section>
