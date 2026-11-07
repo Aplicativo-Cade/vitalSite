@@ -42,7 +42,7 @@ export default function Steps() {
                   {s.n}
                 </div>
                 <div>
-                  <b className="text-sm md:text-base font-semibold block text-foreground">{s.title}</b>
+                  <b className="text-sm md:text-base font-semibold block text-primary/10">{s.title}</b>
                   <p className="text-xs md:text-sm text-muted-foreground mt-0.5 leading-relaxed">{s.text}</p>
                 </div>
               </div>

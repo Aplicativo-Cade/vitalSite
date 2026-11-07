@@ -32,7 +32,7 @@ export const STEPS = [
 ];
 
 export const NUMBERS = [
-  { n: "5", t: "Tomos completos + Herramientas", d: "Físico, movilidad, estiramientos, cognitivo, dinámicas y herramientas inteligentes" },
+  { n: "3", t: "Tomos completos + Herramientas", d: "Físico, estiramientos y actividades cognitivas, y mas herramientas inteligentes" },
   { n: "Filtros", t: "Buscador Inteligente", d: "Encontrá ejercicios por condición (silla de ruedas, post-caída, marcha)." },
   { n: "Sesión Express", t: "Generador de Sesiones", d: "Seleccioná el tiempo y foco; el MiniApp arma tu rutina automáticamente." },
   { n: "Colecciones", t: "Sistema de Colecciones", d: "Guardá y agrupá tus rutinas favoritas estilo carpetas para cada paciente o grupo." },
@@ -159,9 +159,9 @@ export const OBJECTIONS = [
 export const BONUSES = [
   {
     img: `${B}1787663348402_bono1.webp`,
-    alt: "Bono 1 movilidad reducida",
-    title: "+100 Ejercicios · Movilidad Reducida",
-    text: "Actividades adaptadas para silla de ruedas y poca movilidad. Para que ningún paciente quede afuera.",
+    alt: "Bono 1 Actividades Cognitivas y de Estimulación",
+    title: "+100 Actividades · Cognitivas y de Estimulación",
+    text: "Sopas de letras, laberintos y secuencias diseñadas especialmente para Estimular la agilidad mental y rehabilitación física, logrando una atención integral.",
     value: "Vale $20",
   },
   {
@@ -170,13 +170,6 @@ export const BONUSES = [
     title: "+60 Ejercicios · Recuperación y Post-Caída",
     text: "Progresión segura para volver a moverse después de una caída, cirugía o reposo prolongado.",
     value: "Vale $20",
-  },
-  {
-    img: `${B}1787663350307_bono3.webp`,
-    alt: "Bono 3 guía de evaluación",
-    title: "Guía de Evaluación Física",
-    text: "Escalas y pruebas para medir el estado inicial y demostrar avances ante familias y pacientes.",
-    value: "Vale $17",
   },
 ];
 

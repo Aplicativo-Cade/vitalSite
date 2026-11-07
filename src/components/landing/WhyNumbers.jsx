@@ -25,7 +25,7 @@ export default function WhyNumbers() {
         <img
           className="tomos-img"
           src={MOCKUP}
-          alt="Colección de 5 tomos Vital"
+          alt="Colección de 3 tomos Vital"
           loading="lazy"
         />
       </div>

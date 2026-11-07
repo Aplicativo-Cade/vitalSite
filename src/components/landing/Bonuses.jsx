@@ -15,7 +15,7 @@ export default function Bonuses() {
             Todo lo que te llevás hoy con <span className="amber-bono">acceso vitalicio.</span>
           </h2>
           <p className="sec-sub mt-2 text-sm md:text-base" style={{ color: "rgba(255,255,255,.75)" }}>
-            3 bonos para aplicar con seguridad en cualquier condición.
+            2 bonos para aplicar con seguridad en cualquier condición.
           </p>
         </div>
 

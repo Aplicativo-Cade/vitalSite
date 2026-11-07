@@ -6,7 +6,7 @@ const STACK = [
     <b>+1.997 Fichas Ilustradas</b> · Un ejercicio por página, paso a paso
   </>,
   <>
-    <b>5 Tomos completos + Herramientas</b> · Físico, movilidad, estiramientos, cognitivo, dinámicas y MiniApp
+    <b>3 Tomos completos + Herramientas</b> · Físico, estiramientos y actividades cognitivas.
   </>,
   <>
     <b>Buscador Inteligente y Filtros</b> · Encontrá ejercicios por condición (silla de ruedas, post-caída, marcha)
@@ -18,7 +18,7 @@ const STACK = [
     <b>Sistema de Colecciones</b> · Guardá y agrupá tus rutinas favoritas estilo carpetas para cada paciente
   </>,
   <>
-    <b>3 Bonos exclusivos + +170 Adaptados</b> · Movilidad reducida, recuperación, evaluación y sesiones
+    <b>2 Bonos exclusivos +170 Adaptados</b> · Actividades complementarias y Ejercicios específicos para Recuperación y Post-Caída
   </>,
   <>
     Acceso inmediato y <b>vitalicio</b> + actualizaciones
@@ -31,7 +31,7 @@ const PLAN_FEATURES = [
   "Buscador inteligente y filtros avanzados",
   "Generador de Sesión Express automático",
   "Sistema de colecciones y carpetas",
-  "Los 3 bonos exclusivos y +170 adaptados",
+  "Los 2 bonos exclusivos y +170 adaptados",
   "Garantía incondicional de 7 días",
 ];
 
@@ -63,7 +63,7 @@ export default function Offer() {
         </div>
 
         <div className="plan best" style={{ maxWidth: 520, margin: "0 auto" }}>
-          <h3>Colección Completa GeriActiva MiniApp</h3>
+          <h3>Colección Completa Vital MiniApp</h3>
           <p className="old">
             Antes: <s>US$ 325.78</s>
           </p>
