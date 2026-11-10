@@ -1,4 +1,6 @@
 
+import { useRef, useState } from "react";
+import { Play } from "lucide-react";
 import CtaButton from "./CtaButton";
 
 const VIDEO_URL =
@@ -8,10 +10,21 @@ const VIDEO_POSTER =
   "https://res.cloudinary.com/xiupvhfs/video/upload/so_0/v1794348503/Con_Vital_su_Biblioteca_Inteligente.jpg";
 
 export default function Hero() {
+  /** @type {import("react").RefObject<HTMLVideoElement>} */
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = async () => {
+    try {
+      await videoRef.current?.play();
+    } catch (error) {
+      console.error("Erro ao iniciar vídeo:", error);
+    }
+  };
+
   return (
     <header className="hero">
       <div className="wrap hero-grid">
-
         <div className="hero-copy">
           <span className="pill" style={{ color: "#2b7351" }}>
             FISIOTERAPEUTAS · T.O. · EDUCADORES FÍSICOS · CUIDADORES
@@ -43,20 +56,33 @@ export default function Hero() {
 
         <div className="hero-media">
           <div className="video-wrap">
-          <video
-            className="hero-video"
-            controls
-            playsInline
-            preload="metadata"
-            poster={VIDEO_POSTER}
-            aria-label="Presentación de la biblioteca inteligente"
-          >
-            <source src={VIDEO_URL} />
-          </video>
+            <video
+              ref={videoRef}
+              className="hero-video"
+              controls
+              playsInline
+              preload="metadata"
+              poster={VIDEO_POSTER}
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
+              onEnded={() => setIsPlaying(false)}
+              aria-label="Presentación de la biblioteca inteligente"
+            >
+              <source src={VIDEO_URL} />
+            </video>
 
+            {!isPlaying && (
+              <button
+                type="button"
+                className="hero-play-button"
+                onClick={handlePlay}
+                aria-label="Reproducir video"
+              >
+                <Play size={38} fill="currentColor" />
+              </button>
+            )}
           </div>
         </div>
-
       </div>
     </header>
   );
