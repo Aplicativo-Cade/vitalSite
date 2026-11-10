@@ -43,18 +43,17 @@ export default function Hero() {
 
         <div className="hero-media">
           <div className="video-wrap">
-            <video
-              className="hero-video"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-              poster={VIDEO_POSTER}
-              aria-label="Presentación de la biblioteca inteligente"
-            >
-              <source src={VIDEO_URL} />
-            </video>
+          <video
+            className="hero-video"
+            controls
+            playsInline
+            preload="metadata"
+            poster={VIDEO_POSTER}
+            aria-label="Presentación de la biblioteca inteligente"
+          >
+            <source src={VIDEO_URL} />
+          </video>
+
           </div>
         </div>
 
