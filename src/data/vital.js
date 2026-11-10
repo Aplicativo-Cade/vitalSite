@@ -32,11 +32,10 @@ export const STEPS = [
 ];
 
 export const NUMBERS = [
-  { n: "3", t: "Tomos completos + Herramientas", d: "Físico, estiramientos y actividades cognitivas, y mas herramientas inteligentes" },
+  { n: "3", t: "Tomos completos + Herramientas", d: "Físico, estiramientos, actividades grupales y herramientas inteligentes" },
   { n: "Filtros", t: "Buscador Inteligente", d: "Encontrá ejercicios por condición (silla de ruedas, post-caída, marcha)." },
   { n: "Sesión Express", t: "Generador de Sesiones", d: "Seleccioná el tiempo y foco; el MiniApp arma tu rutina automáticamente." },
   { n: "Colecciones", t: "Sistema de Colecciones", d: "Guardá y agrupá tus rutinas favoritas estilo carpetas para cada paciente o grupo." },
-  { n: "3", t: "Bonos exclusivos", d: "Movilidad reducida, recuperación, evaluación y sesiones." },
   { n: "+170", t: "Adaptados", d: "Movilidad reducida y recuperación post-caída." },
 ];
 
@@ -118,7 +117,7 @@ export const GALLERY = [
 ];
 
 export const INCLUDES = [
-  "+1.997 páginas organizadas por tomo, nivel y objetivo",
+  "+1.300 páginas organizadas por tomo, nivel y objetivo",
   "Ejercicios físicos, cognitivos, estiramientos y dinámicas grupales",
   "91 láminas imprimibles: sopas de letras, laberintos y secuencias",
   "Con y sin equipamiento · un ejercicio por página, ilustrado",
@@ -148,11 +147,11 @@ export const OBJECTIONS = [
   },
   {
     q: "Ya tengo material parecido.",
-    a: "Acá son +1.997 páginas organizadas por categoría, listas para usar, más láminas imprimibles. Nunca más improvisás una sesión.",
+    a: "Acá son +1.300 páginas organizadas por categoría, listas para usar, más láminas imprimibles. Nunca más improvisás una sesión.",
   },
   {
     q: "Es caro para lo que trae.",
-    a: "Por menos de lo que cobrás una sola sesión, te llevás los 5 tomos + 4 bonos. Para siempre.",
+    a: "Por menos de lo que cobrás una sola sesión, te llevás los 3 tomos + 2 bonos. Para siempre.",
   },
 ];
 
@@ -231,6 +230,6 @@ export const ROWS = [
   },
   {
     left: { text: "Ejercicios ilustrados", ok: true },
-    right: { text: "+1.997 fichas ilustradas, paso a paso", ok: true },
+    right: { text: "+1.300 fichas ilustradas, paso a paso", ok: true },
   },
 ];

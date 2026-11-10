@@ -13,7 +13,7 @@ export default function Includes() {
           </p>
         </div>
 
-        {/* Card Destaque para o +1.997 (Redesenhado para parecer estatística de valor, não CTA) */}
+        {/* Card Destaque para o +1.300 (Redesenhado para parecer estatística de valor, não CTA) */}
         <div className="mb-10 rounded-3xl bg-card border border-border/60 p-8 shadow-soft flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
           
@@ -22,7 +22,7 @@ export default function Includes() {
               Biblioteca masiva
             </span>
             <div className="flex items-baseline justify-center md:justify-start gap-2">
-              <span className="font-display text-5xl md:text-6xl font-bold text-foreground">+1.997</span>
+              <span className="font-display text-5xl md:text-6xl font-bold text-foreground">+1.300</span>
               <span className="text-xl font-medium text-muted-foreground">Fichas</span>
             </div>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-xl">

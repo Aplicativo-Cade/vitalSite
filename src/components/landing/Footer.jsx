@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <b>Vital MiniApp</b> · +1.997 Fichas Ilustradas y Herramientas Inteligentes
+      <b>Vital MiniApp</b> · +1.300 Fichas Ilustradas y Herramientas Inteligentes
       <br />
       Plataforma y material profesional para fisioterapeutas, educadores físicos y cuidadores.
       <br />

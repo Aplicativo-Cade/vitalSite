@@ -39,7 +39,7 @@ export default function Home() {
       <PhraseBand>Nunca más repetir ejercicios ni perder la tarde planificando.</PhraseBand>
 
       <Offer />
-      <Results />
+      {/* <Results /> */}
       <Faq />
       <Footer />
     </div>

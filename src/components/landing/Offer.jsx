@@ -3,7 +3,7 @@ import OfferCountdown from "./OfferCountdown";
 
 const STACK = [
   <>
-    <b>+1.997 Fichas Ilustradas</b> · Un ejercicio por página, paso a paso
+    <b>+1.300 Fichas Ilustradas</b> · Un ejercicio por página, paso a paso
   </>,
   <>
     <b>3 Tomos completos + Herramientas</b> · Físico, estiramientos y actividades cognitivas.
@@ -27,7 +27,7 @@ const STACK = [
 
 const PLAN_FEATURES = [
   "Acceso completo al MiniApp interactivo",
-  "+1.997 fichas ilustradas paso a paso",
+  "+1.300 fichas ilustradas paso a paso",
   "Buscador inteligente y filtros avanzados",
   "Generador de Sesión Express automático",
   "Sistema de colecciones y carpetas",

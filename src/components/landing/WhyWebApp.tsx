@@ -24,7 +24,7 @@ const ROWS: CompareRow[] = [
   },
   {
     left: { text: "Ejercicios ilustrados", ok: true },
-    right: { text: "+1.997 fichas ilustradas, paso a paso", ok: true },
+    right: { text: "+1.300 fichas ilustradas, paso a paso", ok: true },
   },
 ];
 

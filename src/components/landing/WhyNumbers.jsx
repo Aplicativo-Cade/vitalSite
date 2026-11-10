@@ -8,7 +8,7 @@ export default function WhyNumbers() {
         <p className="sec-sub">La colección más completa del mercado, ahora en formato digital interactivo.</p>
 
         <div className="big-num">
-          <b>+1.997</b>
+          <b>+1.300</b>
           Fichas Ilustradas: Un ejercicio por página, paso a paso, con y sin equipamiento.
         </div>
 
