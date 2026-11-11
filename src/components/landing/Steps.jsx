@@ -19,7 +19,7 @@ export default function Steps() {
             <div className="hero-media rounded-2xl overflow-hidden shadow-lift border border-border/50 bg-card">
               <div className="video-wrap relative w-full aspect-video">
                 <iframe
-                  src="https://fast.wistia.net/embed/iframe/cwuuj9b5lq?seo=false&videoFoam=false"
+                  src="https://res.cloudinary.com/xiupvhfs/video/upload/v1794362787/asasasasasa.mp4"
                   title="Presentación del kit Vital"
                   allow="autoplay; fullscreen"
                   allowFullScreen

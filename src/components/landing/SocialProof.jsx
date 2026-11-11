@@ -71,13 +71,10 @@ const EXTRA_ITEMS = [
     photo: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790038103/50171c86420465a36c0e214311e4d7c7.jpg",
   },
   {
-    type: "testimonial",
-    id: "review-3",
-    who: "Ana López García",
-    role: "Fisioterapeuta",
-    quote:
-      "Dejé de improvisar. Tener miles de ejercicios ilustrados y buscarlos en segundos ordenó mi trabajo por completo: mis pacientes están más motivados.",
-    photo: "https://res.cloudinary.com/xiupvhfs/image/upload/v1789747970/2026-09-18_13-12.png",
+    type: "video",
+    id: "video-2",
+    src: "https://res.cloudinary.com/xiupvhfs/video/upload/v1794362601/asaqwdecwdfgdf.mp4",
+    alt: "Depoimento em vídeo de fisioterapeuta Ana López García",
   },
 ];
 

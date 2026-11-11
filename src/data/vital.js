@@ -4,8 +4,6 @@ const B =
 /** Checkout configurável — troque pela URL de checkout definitiva quando disponível. */
 export const CHECKOUT_URL = "https://Vital.impultienda.ar/checkout";
 
-export const MOCKUP = `${B}1787977659934_mockup-final.webp`;
-
 export const STEPS = [
   { n: "1", title: "Abre", text: "Entrás al MiniApp organizado por categoría, nivel o condición del paciente. Encontrás lo que buscás en segundos." },
   { n: "2", title: "Elige", text: "Usás el generador express o seleccionás tus ejercicios favoritos guardándolos en colecciones personalizadas." },
@@ -80,21 +78,10 @@ export const MINIAPP_SCREENS = [
 ];
 
 export const GALLERY = [
-  { src: `${B}1787958920486_galeria-01.webp`, alt: "Ficha de ejercicio sin equipamiento" },
-  { src: `${B}1787958921853_galeria-02.webp`, alt: "Ficha de ejercicio con equipamiento" },
-  { src: `${B}1787958923205_galeria-03.webp`, alt: "Ficha de ejercicio funcional" },
-  { src: `${B}1787958924620_galeria-04.webp`, alt: "Ficha de equilibrio" },
-  { src: `${B}1787958925993_galeria-05.webp`, alt: "Ficha de motricidad fina" },
-  { src: `${B}1787958927268_galeria-06.webp`, alt: "Ficha de movilidad" },
-  { src: `${B}1787958928683_galeria-07.webp`, alt: "Ficha de estiramiento" },
-  { src: `${B}1787958930438_galeria-08.webp`, alt: "Ficha de respiración y relajación" },
-  { src: `${B}1787958931945_galeria-09.webp`, alt: "Dinámica grupal" },
-  { src: `${B}1787958933236_galeria-10.webp`, alt: "Dinámica grupal musical" },
-  { src: `${B}1787958934515_galeria-11.webp`, alt: "Ejercicio de movilidad reducida" },
-  { src: `${B}1787958935944_galeria-12.webp`, alt: "Ejercicio de recuperación" },
-  { src: `${B}1787958937352_galeria-13.webp`, alt: "Lámina imprimible: sopa de letras" },
-  { src: `${B}1787958938376_galeria-14.webp`, alt: "Lámina imprimible: laberinto" },
-  { src: `${B}1787958939318_galeria-15.webp`, alt: "Lámina imprimible: ordenar los pasos" },
+  { src: `https://res.cloudinary.com/xiupvhfs/image/upload/v1794404620/screencapture-vital-app-ten-vercel-app-ejercicio-elevacion-brazos-sentado-2026-11-11-10_23_37.png`, alt: "Ejercicio de movilidad reducida" },
+  { src: `https://res.cloudinary.com/xiupvhfs/image/upload/v1794404620/screencapture-vital-app-ten-vercel-app-ejercicio-estiramiento-gemelo-silla-2026-11-11-10_32_06.png`, alt: "Ficha de ejercicio sin equipamiento" },
+  { src: `https://res.cloudinary.com/xiupvhfs/image/upload/v1794404620/screencapture-vital-app-ten-vercel-app-ejercicio-secuencias-tarjetas-2026-11-11-10_32_31.png`, alt: "Dinámica grupal con tarjetas" },
+  { src: `https://res.cloudinary.com/xiupvhfs/image/upload/v1794404621/screencapture-vital-app-ten-vercel-app-ejercicio-pase-pelota-circulo-2026-11-11-10_24_12.png`, alt: "Dinámica grupal musical" },
 ];
 
 export const INCLUDES = [
@@ -138,14 +125,14 @@ export const OBJECTIONS = [
 
 export const BONUSES = [
   {
-    img: `${B}1787663348402_bono1.webp`,
+    img: `https://res.cloudinary.com/xiupvhfs/image/upload/v1794403766/Mockup_de_Atividades_Cognitivas.png`,
     alt: "Bono 1 Actividades Cognitivas y de Estimulación",
     title: "+100 Actividades · Cognitivas y de Estimulación",
     text: "Sopas de letras, laberintos y secuencias diseñadas especialmente para Estimular la agilidad mental y rehabilitación física, logrando una atención integral.",
     value: "Vale $20",
   },
   {
-    img: `${B}1787663349475_bono2.webp`,
+    img: `https://res.cloudinary.com/xiupvhfs/image/upload/v1794404227/Mockup_de_Guia_de_Reabilita%C3%A7%C3%A3o_60.png`,
     alt: "Bono 2 recuperación física",
     title: "+60 Ejercicios · Recuperación y Post-Caída",
     text: "Progresión segura para volver a moverse después de una caída, cirugía o reposo prolongado.",

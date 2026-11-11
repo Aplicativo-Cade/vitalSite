@@ -1,4 +1,4 @@
-import { INCLUDES, NUMBERS, MOCKUP } from "@/data/vital";
+import { NUMBERS } from "@/data/vital";
 import CtaButton from "./CtaButton";
 
 export default function Includes() {
@@ -30,17 +30,14 @@ export default function Includes() {
             </p>
           </div>
 
-          {/* Mockup opcional integrado para valorizar o visual */}
-          {MOCKUP && (
-            <div className="shrink-0 w-full md:w-56 flex justify-center z-10">
+            <div>
               <img
-                src={MOCKUP}
+                src='https://res.cloudinary.com/xiupvhfs/image/upload/v1794402236/Cole%C3%A7%C3%A3o_Verde_de_Fisioterapia_e_Bem-Estar.png'
                 alt="Colección Vital"
-                className="max-h-40 object-contain drop-shadow-lg"
+                className="object-contain drop-shadow-lg"
                 loading="lazy"
               />
             </div>
-          )}
         </div>
 
         {/* Grid de Cards Numéricos / Benefícios do WhyNumbers */}
