@@ -6,25 +6,6 @@ export const CHECKOUT_URL = "https://Vital.impultienda.ar/checkout";
 
 export const MOCKUP = `${B}1787977659934_mockup-final.webp`;
 
-export const TESTIMONIALS = [
-  {
-    photo: `https://res.cloudinary.com/xiupvhfs/video/upload/v1793986372/download_1.mp4`,
-    alt: "Ana López García, fisioterapeuta de Argentina, en la app Vital",
-    quote:
-      "Dejé de improvisar. Tener miles de ejercicios ilustrados y buscarlos en segundos ordenó mi trabajo por completo: mis pacientes están más motivados.",
-    who: "Ana López García",
-    role: "Fisioterapeuta · Argentina",
-  },
-  {
-    photo: `https://res.cloudinary.com/xiupvhfs/video/upload/v1793987133/853c22920e9a037e16091f181a7495cc.mp4`,
-    alt: "Bento Muñoz, kinesióloga de Colombia, con la app Vital",
-    quote:
-      "Antes armaba cada sesión desde cero y se me iban las tardes. Con Vital abro, elijo la ficha y la aplico. Mis pacientes notaron el cambio… y yo recuperé mi tiempo.",
-    who: "Bento Muñoz",
-    role: "Terapeuta ocupacional · Colombia",
-  },
-];
-
 export const STEPS = [
   { n: "1", title: "Abre", text: "Entrás al MiniApp organizado por categoría, nivel o condición del paciente. Encontrás lo que buscás en segundos." },
   { n: "2", title: "Elige", text: "Usás el generador express o seleccionás tus ejercicios favoritos guardándolos en colecciones personalizadas." },

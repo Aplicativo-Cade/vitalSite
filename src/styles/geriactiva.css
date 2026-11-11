@@ -1411,3 +1411,216 @@
   object-fit: cover;
   border-radius: inherit;
 }
+
+
+.social-proof {
+  width: 100%;
+  padding: 80px 0;
+  overflow: hidden;
+  background: #f8f7fc;
+}
+
+.sp-heading {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 45px;
+  padding: 0 20px;
+}
+
+.sp-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #7750df;
+  margin-bottom: 16px;
+}
+
+.sp-heading h2 {
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -1.8px;
+  color: #17151e;
+  margin: 0;
+}
+
+.sp-subtitle {
+  font-size: 16px;
+  color: #777481;
+  margin-top: 16px;
+}
+
+/* Carrossel */
+
+.sp-carousel {
+  width: 100%;
+  overflow: hidden;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 4%,
+    black 96%,
+    transparent
+  );
+}
+
+.sp-track {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: max-content;
+  animation: sp-scroll 55s linear infinite;
+}
+
+.sp-carousel:hover .sp-track {
+  animation-play-state: paused;
+}
+
+.sp-item {
+  flex: 0 0 auto;
+  width: 250px;
+}
+
+/* Vídeos */
+
+.sp-video {
+  width: 100%;
+  height: 310px;
+  border-radius: 17px;
+  overflow: hidden;
+  background: #e9e5f2;
+}
+
+.sp-video video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Cards de depoimentos */
+
+.sp-card {
+  width: 100%;
+  height: 180px;
+  padding: 20px;
+  border-radius: 17px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sp-card.has-photo {
+  height: 310px;
+}
+
+.sp-card-header {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 13px;
+}
+
+.sp-avatar {
+  width: 38px;
+  height: 38px !important;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sp-person {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.sp-person strong {
+  font-size: 13px;
+  font-weight: 700;
+  color: #25232b;
+}
+
+.sp-person span {
+  font-size: 11px;
+  color: #9994a3;
+  margin-top: 3px;
+}
+
+.sp-stars {
+  font-size: 15px;
+  color: #f5a623;
+  letter-spacing: 2px;
+  margin-bottom: 9px;
+}
+
+.sp-quote {
+  font-size: 12px;
+  line-height: 1.55;
+  color: #55515e;
+  margin: 0;
+}
+
+/* Movimento infinito */
+
+@keyframes sp-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Acessibilidade */
+
+@media (prefers-reduced-motion: reduce) {
+  .sp-track {
+    animation: none;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .social-proof {
+    padding: 55px 0;
+  }
+
+  .sp-heading {
+    margin-bottom: 30px;
+  }
+
+  .sp-heading h2 {
+    font-size: 32px;
+  }
+
+  .sp-subtitle {
+    font-size: 14px;
+  }
+
+  .sp-track {
+    gap: 10px;
+    animation-duration: 40s;
+  }
+
+  .sp-item {
+    width: 220px;
+  }
+
+  .sp-video,
+  .sp-card.has-photo {
+    height: 280px;
+  }
+
+  .sp-card {
+    height: 180px;
+    padding: 17px;
+  }
+}
