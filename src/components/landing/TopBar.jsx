@@ -1,16 +1,22 @@
-import { CHECKOUT_URL } from "@/data/vital";
-import { Leaf } from "lucide-react";
 
 export default function TopBar() {
-  const today = new Date().toLocaleDateString("es-CO", { day: "2-digit", month: "2-digit" });
+  const today = new Date().toLocaleDateString("es-CO", {
+    day: "2-digit",
+    month: "2-digit",
+  });
 
   return (
     <div className="top">
-      <span className="font-display text-2xl">Vital</span>
+      <img
+        src="https://res.cloudinary.com/xiupvhfs/image/upload/v1794405918/2026-11-10_10-31-removebg-preview.png"
+        alt="Logo da marca"
+        className="top-logo"
+      />
+
       <div className="topdisc">
-        🔥 DESCUENTO VÁLIDO SÓLO HOY • ACCESO INSTANTÁNEO
-        <br />
-        <span>{today}</span>
+        <span className="gold-text">
+        DESCUENTO VÁLIDO SÓLO HOY  <span className="gold-date">{today}</span>
+        </span>        
       </div>
     </div>
   );

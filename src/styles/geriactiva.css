@@ -100,27 +100,40 @@
 }
 
 /* botão */
+/* botão dourado */
 .ga .btn {
   display: block;
-  background: var(--amber);
-  color: var(--on-amber);
+  background: linear-gradient(
+    100deg,
+    #8F5E25 0%,
+    #FBF4A1 50%,
+    #8F5E25 100%
+  );
+  color: #173D2B;
   font-weight: 800;
   text-decoration: none;
   text-align: center;
   padding: 18px 20px;
   border-radius: var(--r-lg);
   font-size: 0.85rem;
-  box-shadow: 0 8px 24px rgba(208, 255, 0, 0.25);
-  transition: transform 0.15s ease, background-color 0.2s ease, box-shadow 0.2s ease;
-  border: none;
+  box-shadow: 0 8px 24px rgba(143, 94, 37, 0.25);
+  transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #C9A64B;
   width: 100%;
   cursor: pointer;
 }
+
 .ga .btn:hover {
-  background: var(--amber-hover);
+  background: linear-gradient(
+    100deg,
+    #A87532 0%,
+    #FFF6B8 50%,
+    #A87532 100%
+  );
   transform: translateY(-1px) scale(1.01);
-  box-shadow: 0 12px 30px rgba(208, 255, 0, 0.35);
+  box-shadow: 0 12px 30px rgba(143, 94, 37, 0.35);
 }
+
 .ga .btn:active {
   transform: scale(0.98);
 }
@@ -273,10 +286,16 @@
   background: var(--white);
 }
 
-/* faixa frase */
+
+/* faixa frase dourada */
 .ga .phrase {
-  background: var(--amber);
-  color: var(--on-amber);
+  background: linear-gradient(
+    100deg,
+    #8F5E25 0%,
+    #FBF4A1 50%,
+    #8F5E25 100%
+  );
+  color: #173D2B;
   text-align: center;
   font-family: "Fraunces", Georgia, serif;
   font-weight: 700;
@@ -284,13 +303,18 @@
   padding: 20px 18px;
   line-height: 1.35;
 }
+
+/* versão escura */
 .ga .phrase.dark {
-  background: var(--teal);
-  color: var(--on-teal);
+  background: #123D2D;
+  color: #FBF4A1;
 }
+
+/* destaques na versão escura */
 .ga .phrase.dark b {
-  color: var(--amber);
+  color: #D8B95B;
 }
+
 
 /* prova social */
 .ga .social {
@@ -1623,4 +1647,31 @@
     height: 180px;
     padding: 17px;
   }
+}
+
+.top-logo {
+  width: 38px;
+  height: 19px;
+  object-fit: contain;
+  display: block;
+}
+
+.gold-text {
+  background:#FBF4A1;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 600;
+}
+
+.gold-date {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  background:#fafaf9;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 600;
 }

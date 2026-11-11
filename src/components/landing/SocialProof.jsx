@@ -33,7 +33,7 @@ const EXTRA_ITEMS = [
   },
   {
     type: "testimonial",
-    id: "review-12",
+    id: "review-2",
     who: "Bento Muñoz",
     role: "Terapeuta ocupacional",
     quote:
@@ -41,14 +41,14 @@ const EXTRA_ITEMS = [
     photo: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790038665/2026-09-21_21-56.png",
   },
   {
-    type: "image",
-    id: "image-3",
-    src: "https://res.cloudinary.com/xiupvhfs/image/upload/v1794357192/2026-11-10_21-31.png",
-    alt: "Registro de resultado Vital",
+    type: "video",
+    id: "video-2",
+    src: "https://res.cloudinary.com/xiupvhfs/video/upload/v1794362601/asaqwdecwdfgdf.mp4",
+    alt: "Depoimento em vídeo de fisioterapeuta Ana López García",
   },
   {
     type: "testimonial",
-    id: "review-2",
+    id: "review-3",
     who: "Lucas Ferreira",
     role: "Terapeuta ocupacional",
     quote:
@@ -62,23 +62,21 @@ const EXTRA_ITEMS = [
     alt: "Registro de resultado Vital",
   },
   {
+    type: "image",
+    id: "image-3",
+    src: "https://res.cloudinary.com/xiupvhfs/image/upload/v1794357192/2026-11-10_21-31.png",
+    alt: "Registro de resultado Vital",
+  },
+  {
     type: "testimonial",
-    id: "review-3",
+    id: "review-4",
     who: "Camila Rodrigues",
     role: "Cuidadora",
     quote:
-      "Finalmente encontré una solución que facilita mi rutina. ¡La recomiendo a todos los profesionales del área!",
+    "Finalmente encontré una solución que facilita mi rutina. ¡La recomiendo a todos los profesionales del área!",
     photo: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790038103/50171c86420465a36c0e214311e4d7c7.jpg",
   },
-  {
-    type: "video",
-    id: "video-2",
-    src: "https://res.cloudinary.com/xiupvhfs/video/upload/v1794362601/asaqwdecwdfgdf.mp4",
-    alt: "Depoimento em vídeo de fisioterapeuta Ana López García",
-  },
 ];
-
-
 
 const isVideoUrl = (url = "") => {
   return (
@@ -193,7 +191,7 @@ function CarouselItem({ item }) {
 
 export default function SocialProof() {
   // Duplica os itens para criar o loop infinito
-  const duplicatedItems = [...ITEMS, ...ITEMS];
+  const duplicatedItems = [...ITEMS];
 
   return (
     <section className="social-proof">

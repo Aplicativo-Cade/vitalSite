@@ -1,5 +1,4 @@
 import ComparisonTable, { type CompareRow } from "../landing/ComparisonTable";
-import { MOCKUP } from "@/data/vital";
 
 const ROWS: CompareRow[] = [
   {
