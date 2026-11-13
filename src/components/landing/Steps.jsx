@@ -1,4 +1,5 @@
 import { STEPS } from "@/data/vital";
+import CtaButton from "./CtaButton";
 
 export default function Steps() {
   return (
@@ -50,6 +51,11 @@ export default function Steps() {
           </div>
 
         </div>
+        <div style={{ textAlign: "center", marginTop: "2rem" }}>
+            <CtaButton sub="Acceso inmediato · Garantía de 7 días">
+              QUIERO MI ACCESO AL MiniApp AHORA
+            </CtaButton>
+          </div>
       </div>
     </section>
   );

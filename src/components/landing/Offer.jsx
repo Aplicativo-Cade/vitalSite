@@ -67,7 +67,7 @@ export default function Offer() {
           <p className="old">
             Antes: <s>US$ 325.78</s>
           </p>
-          <div className="now">US$ 17</div>
+          <div className="now">US$ 9</div>
           <p className="save">Ahorrás US$ 308.78</p>
           <ul className="feats">
             {PLAN_FEATURES.map((feature) => (

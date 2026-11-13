@@ -7,7 +7,7 @@ const VIDEO_URL =
   "https://res.cloudinary.com/xiupvhfs/video/upload/q_auto/f_auto/v1794348503/Con_Vital_su_Biblioteca_Inteligente.mp4";
 
 const VIDEO_POSTER =
-  "https://res.cloudinary.com/xiupvhfs/video/upload/so_0/v1794348503/Con_Vital_su_Biblioteca_Inteligente.jpg";
+  "https://res.cloudinary.com/xiupvhfs/image/upload/v1794540410/2026-11-13_00-25.png";
 
 export default function Hero() {
   /** @type {import("react").RefObject<HTMLVideoElement>} */

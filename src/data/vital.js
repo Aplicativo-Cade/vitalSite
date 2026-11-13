@@ -1,6 +1,3 @@
-const B =
-  "https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/";
-
 /** Checkout configurável — troque pela URL de checkout definitiva quando disponível. */
 export const CHECKOUT_URL = "https://pay.hotmart.com/P108461874D?checkoutMode=10";
 
@@ -138,14 +135,6 @@ export const BONUSES = [
     text: "Progresión segura para volver a moverse después de una caída, cirugía o reposo prolongado.",
     value: "Vale $20",
   },
-];
-
-export const USAGE_PHOTOS = [
-  { src: `${B}1792464242024_es-uso-1-jp-e5ae1acb.webp`, alt: "Testimonio de una fisioterapeuta" },
-  { src: `${B}1792464247960_es-uso-2-jp-d68060dc.webp`, alt: "Testimonio de un educador físico" },
-  { src: `${B}1792464260800_es-uso-3-jp-20d52da4.webp`, alt: "Testimonio de un kinesiólogo" },
-  { src: `${B}1792464266394_es-uso-4-jp-5a9558ca.webp`, alt: "Testimonio de una terapeuta ocupacional" },
-  { src: `${B}1792464279495_es-uso-5-jp-7f7bfe5d.webp`, alt: "Testimonio de una cuidadora" },
 ];
 
 export const FAQ = [

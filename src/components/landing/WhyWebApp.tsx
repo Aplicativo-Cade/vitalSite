@@ -1,4 +1,5 @@
 import ComparisonTable, { type CompareRow } from "../landing/ComparisonTable";
+import CtaButton from "./CtaButton";
 
 const ROWS: CompareRow[] = [
   {
@@ -43,6 +44,11 @@ export default function WhyWebApp() {
           rows={ROWS}
           image='https://res.cloudinary.com/xiupvhfs/image/upload/v1793980033/watermarked_img_4218221343422060236.jpg'
         />
+          <div style={{ textAlign: "center", marginTop: "2rem" }}>
+            <CtaButton sub="Acceso inmediato · Garantía de 7 días">
+              QUIERO MI ACCESO AL MiniApp AHORA
+            </CtaButton>
+          </div>
       </div>
     </section>
   );
