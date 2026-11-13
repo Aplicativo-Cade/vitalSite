@@ -2,7 +2,7 @@ const B =
   "https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/";
 
 /** Checkout configurável — troque pela URL de checkout definitiva quando disponível. */
-export const CHECKOUT_URL = "https://Vital.impultienda.ar/checkout";
+export const CHECKOUT_URL = "https://pay.hotmart.com/P108461874D?checkoutMode=10";
 
 export const STEPS = [
   { n: "1", title: "Abre", text: "Entrás al MiniApp organizado por categoría, nivel o condición del paciente. Encontrás lo que buscás en segundos." },
